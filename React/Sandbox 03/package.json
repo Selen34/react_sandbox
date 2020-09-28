@@ -1,0 +1,23 @@
+{
+  "name": "sandbox-03",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "bv": "node_modules\\.bin\\babel --version",
+    "build:script": "node_modules\\.bin\\babel src\\script.jsx -o js\\script.js -w",
+    "build": "node_modules\\.bin\\babel jsx -d js -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "babel": {
+    "presets": [
+      "react"
+    ]
+  },
+  "devDependencies": {
+    "babel-cli": "^6.9.0",
+    "babel-preset-react": "^6.5.0"
+  }
+}
